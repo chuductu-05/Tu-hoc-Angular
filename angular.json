@@ -7,13 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": [
-            "src/styles.scss",
-            "node_modules/primeicons/primeicons.css",
-            "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-            "node_modules/primeng/resources/primeng.min.css",
-            "node_modules/primeflex/primeflex.css"
-          ]
+          "style": ["src/styles.scss"]
         }
       },
       "root": "",
@@ -22,7 +16,7 @@
       "architect": {
         "build": {
           "builder": "@angular/build:application",
-          "options": {
+          "options": {   
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
